@@ -56,7 +56,6 @@
  {
  	let outcome;
  	let computersChoice = getComputerChoice();
- 	console.log(computersChoice);
  	let playersChoice = getPlayerChoice();
 
  	// Player Rock comparison
@@ -210,7 +209,6 @@
 
  	alert(outcome + score);
  }
-
 
 // Starts game loop
 game();
