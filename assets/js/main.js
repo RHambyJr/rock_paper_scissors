@@ -118,16 +118,17 @@
 // Calls alert function based on the round's outcome
  function displayOutcome(player, cpu, outcome)
  {
+ 	// Player wins
  	if(outcome === "win")
  	{
  		alert("You win, " + player + " beats " + cpu + "!");
  	}
-
+ 	// Player loses
  	if(outcome === "lose")
  	{
  		alert("You lose, " + cpu + " beats " + player + "!");
  	}
-
+ 	// Player ties
  	if(outcome === "tie")
  	{
  		alert("You tie, " + player + " and " + cpu + " are the same!");
@@ -186,14 +187,17 @@
  {
  	let outcome;
 
+ 	// Player wins
  	if (player > cpu)
  	{
  		outcome = "CONGRATULATIONS! You win!";
  	}
+ 	// Player loses
  	else if (player < cpu)
  	{
  		outcome = "Sorry! You lose!";
  	}
+ 	// Player ties
  	else
  	{
  		outcome = "It was a tie!";
@@ -207,4 +211,6 @@
  	alert(outcome + score);
  }
 
+
+// Starts game loop
 game();
